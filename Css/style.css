@@ -140,10 +140,10 @@
         .planning-container__section--3 li .checkMark:checked::after {
           display: block; }
         .planning-container__section--3 li .checkMark::after {
-          content: "\002714";
+          content: "\2713";
           font-size: 13px;
           display: none;
-          color: var(--color-white); }
+          color: #f00; }
     .planning-container__section--3::before {
       content: "۳"; }
     .planning-container__section--4::before {

@@ -163,7 +163,7 @@
 }
 
 .days-iteme--container > span input::after {
-   content: "\002714";
+   content: "\2713";
    font-size: 13px;
    display: none;
    color: #FFF;

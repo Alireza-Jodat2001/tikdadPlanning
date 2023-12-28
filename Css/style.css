@@ -29,6 +29,9 @@
     font-size: 13px;
     color: var(--color-purple-primary);
     padding: 15px 10px; }
+    .planning-container__section .p-heading {
+      color: var(--color-purple-primary);
+      margin-bottom: 7px; }
     .planning-container__section::before {
       color: var(--color-purple-primary);
       position: absolute;
@@ -42,15 +45,57 @@
       align-items: center;
       font-size: 16px; }
     .planning-container__section--1 p {
-      color: var(--color-purple-primary); }
+      margin-bottom: 15px; }
+    @media screen and (min-width: 500px) {
+      .planning-container__section--1 .input-box {
+        display: flex;
+        align-items: center;
+        gap: 30px; } }
+    .planning-container__section--1 .input-box .item {
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+      align-items: center; }
+      @media screen and (min-width: 500px) {
+        .planning-container__section--1 .input-box .item {
+          width: 160px; } }
+      @media screen and (max-width: 500px) {
+        .planning-container__section--1 .input-box .item:first-child {
+          margin-bottom: 10px; } }
     .planning-container__section--1 input {
       border: 1px solid var(--color-purple-primary);
       border-radius: 5px;
-      width: 90px; }
+      width: 90px;
+      text-align: center; }
     .planning-container__section--1::before {
       content: "۱"; }
     .planning-container__section--2::before {
       content: "۲"; }
+    .planning-container__section--3 li {
+      display: flex;
+      gap: 10px;
+      align-items: center; }
+      .planning-container__section--3 li::before {
+        content: "\203A";
+        font-size: 30px; }
+      .planning-container__section--3 li input {
+        width: 15px;
+        height: 15px;
+        appearance: none;
+        border: 1px solid var(--color-purple-primary);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .planning-container__section--3 li input:checked {
+          background: var(--color-purple-primary); }
+        .planning-container__section--3 li input:checked::after {
+          display: block; }
+        .planning-container__section--3 li input::after {
+          content: "\002714";
+          font-size: 13px;
+          display: none;
+          color: var(--color-white); }
     .planning-container__section--3::before {
       content: "۳"; }
     .planning-container__section--4::before {

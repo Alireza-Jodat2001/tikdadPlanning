@@ -33,6 +33,11 @@
         color: var(--color-purple-primary);
         padding: 15px 10px;
 
+        & .p-heading {
+            color: var(--color-purple-primary);
+            margin-bottom: 7px;
+        }
+
         &::before {
             color: var(--color-purple-primary);
             position: absolute;
@@ -49,16 +54,39 @@
 
         &--1 {
             p {
-                color: var(--color-purple-primary);
+                margin-bottom: 15px;
             }
 
             & .input-box {
+                @media screen and (min-width: 500px) {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                }
+
+                & .item {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 180px;
+                    align-items: center;
+
+                    @media screen and (min-width: 500px) {
+                        width: 160px;
+                    }
+
+                    &:first-child {
+                        @media screen and (max-width: 500px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
             }
 
             input {
                 border: 1px solid var(--color-purple-primary);
                 border-radius: 5px;
                 width: 90px;
+                text-align: center;
             }
 
             &::before {
@@ -73,6 +101,43 @@
         }
 
         &--3 {
+            li {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                &::before {
+                    content: "\203A";
+                    font-size: 30px;
+                }
+
+                input {
+                    width: 15px;
+                    height: 15px;
+                    appearance: none;
+                    border: 1px solid var(--color-purple-primary);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:checked {
+                        background: var(--color-purple-primary);
+                    }
+
+                    &:checked::after {
+                        display: block;
+                    }
+
+                    &::after {
+                        content: "\002714";
+                        font-size: 13px;
+                        display: none;
+                        color: var(--color-white);
+                    }
+                }
+            }
+
             &::before {
                 content: "۳";
             }
@@ -142,7 +207,7 @@
 //             border-radius: 7px;
 //             width: 60%;
 //         }
-
+// \2713
 //         input {
 //             width: 35px;
 //             height: 35px;

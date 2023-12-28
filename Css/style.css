@@ -143,7 +143,7 @@
           content: "\2713";
           font-size: 13px;
           display: none;
-          color: #f00; }
+          color: #FFF; }
     .planning-container__section--3::before {
       content: "۳"; }
     .planning-container__section--4::before {

@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Dirooz";
+    src: url("../Font/Dirooz.woff");
+}
+
+:root {
+    --color-purple-primary: #4c0083;
+    --color-white: #fff;
+    --color-gray-dark: #e0e0e0;
+    --color-gray-light: #f1f1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Dirooz;
+}
+
+.planning-container {
+    padding: 15px 15px 50px;
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0 0 10px var(--color-gray-dark);
+
+    &__section {
+        border: 1px solid var(--color-purple-primary);
+        position: relative;
+        border-radius: 5px;
+        font-size: 13px;
+        color: var(--color-purple-primary);
+        padding: 15px 10px;
+
+        &::before {
+            color: var(--color-purple-primary);
+            position: absolute;
+            top: -8px;
+            right: 6px;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            background: var(--color-white);
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        &--1 {
+            p {
+                color: var(--color-purple-primary);
+            }
+
+            & .input-box {
+            }
+
+            input {
+                border: 1px solid var(--color-purple-primary);
+                border-radius: 5px;
+                width: 90px;
+            }
+
+            &::before {
+                content: "۱";
+            }
+        }
+
+        &--2 {
+            &::before {
+                content: "۲";
+            }
+        }
+
+        &--3 {
+            &::before {
+                content: "۳";
+            }
+        }
+
+        &--4 {
+            &::before {
+                content: "۴";
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        max-width: 600px;
+    }
+}
+
+// .quickActive-box {
+//     padding: 15px 15px 50px;
+//     margin: 0 auto;
+//     width: 90%;
+//     box-shadow: 0 0 10px var(--color-gray-dark);
+
+//     @media screen and (min-width: 600px) {
+//         max-width: 600px;
+//     }
+
+//     &__heading {
+//         color: var(--color-purple-primary);
+//         text-align: center;
+//         font-size: 22px;
+//     }
+
+//     &__name {
+//         text-align: center;
+//         color: #40a8ff;
+//         font-size: 13px;
+//         font-weight: 600;
+//     }
+
+//     &__radioBtn-box {
+//         margin-top: 40px;
+//         margin-bottom: 10px;
+//         max-width: 500px;
+
+//         div {
+//             display: flex;
+//             justify-content: flex-start;
+//             align-items: center;
+//             gap: 90px;
+//             position: relative;
+
+//             &:first-child {
+//                 margin-bottom: 6px;
+//             }
+//         }
+
+//         label {
+//             border: 1px solid var(--color-purple-primary);
+//             font-size: 19px;
+//             padding: 5px 0;
+//             text-align: center;
+//             border-radius: 7px;
+//             width: 60%;
+//         }
+
+//         input {
+//             width: 35px;
+//             height: 35px;
+//             appearance: none;
+//             border: 1px solid var(--color-purple-primary);
+//             border-radius: 5px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             &:checked {
+//                 background: var(--color-purple-primary);
+//             }
+
+//             &:checked::after {
+//                 display: block;
+//             }
+
+//             &::after {
+//                 content: "\002714";
+//                 font-size: 22px;
+//                 display: none;
+//                 color: var(--color-white);
+//             }
+//         }
+//     }
+
+//     &__checkBox-container {
+//         margin-bottom: 25px;
+
+//         li {
+//             display: flex;
+//             align-items: center;
+//             gap: 10px;
+//         }
+
+//         label {
+//             font-size: 21px;
+//         }
+
+//         input {
+//             width: 15px;
+//             height: 15px;
+//             appearance: none;
+//             border: 1px solid var(--color-purple-primary);
+//             border-radius: 2px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             &:checked {
+//                 background: var(--color-purple-primary);
+//             }
+
+//             &:checked::after {
+//                 display: block;
+//             }
+
+//             &::after {
+//                 content: "\002714";
+//                 font-size: 13px;
+//                 display: none;
+//                 color: var(--color-white);
+//             }
+//         }
+//     }
+
+//     &__activeBtn {
+//         width: 80%;
+//         display: block;
+//         margin: 0 auto;
+//         background: var(--color-purple-primary);
+//         color: var(--color-white);
+//         border-radius: 10px;
+//         padding: 5px 0;
+//         font-size: 21px;
+//         border: none;
+//     }
+// }

@@ -49,7 +49,7 @@
     width: 15px;
     height: 15px;
     display: flex;
-    background: #FFF;
+    background: #fff;
     justify-content: center;
     align-items: center;
     font-size: 16px;
@@ -144,29 +144,29 @@
 }
 
 .days-iteme--container > span input {
-   width: 17px;
-   height: 17px;
-   appearance: none;
-   border: 1px solid var(--color-purple-primary);
-   border-radius: 2px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    width: 17px;
+    height: 17px;
+    appearance: none;
+    border: 1px solid var(--color-purple-primary);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .days-iteme--container > span input:checked {
-   background: var(--color-purple-primary);
+    background: var(--color-purple-primary);
 }
 
 .days-iteme--container > span input:checked::after {
-   display: block;
+    display: block;
 }
 
 .days-iteme--container > span input::after {
-   content: "\2713";
-   font-size: 13px;
-   display: none;
-   color: #FFF;
+    content: "\2713";
+    font-size: 13px;
+    display: none;
+    color: #fff;
 }
 
 .planning-container__section--3 li.li-minus {
@@ -197,7 +197,7 @@
     content: "\2212";
     font-size: 17px;
     display: block;
-    color: #FFF;
+    color: #fff;
 }
 
 .planning-container__section--3 li.li-minus.li-minus > ul {
@@ -232,7 +232,7 @@
     content: "\002B";
     font-size: 17px;
     display: block;
-    color: #FFF;
+    color: #fff;
 }
 
 .planning-container__section--3 li.li-plus .plus-items,
@@ -316,6 +316,4 @@
     .planning-container {
         max-width: 600px;
     }
-
 }
-

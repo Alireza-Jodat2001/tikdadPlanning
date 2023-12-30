@@ -115,9 +115,18 @@
     align-items: center;
 }
 
-.planning-container__section--3 li.li-check::before,
+/* new */
+
+.li-check > ul > .li-check,
+.li-minus > ul > .li-check {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.planning-container__section--3 li.li-check ul .li-check::before,
 .planning-container__section--3 li .title::before,
-.planning-container__section--3 li.minus-items::before {
+.planning-container__section--3 li.li-minus ul .li-check::before {
     content: "\203A";
     font-size: 30px;
 }
@@ -168,30 +177,36 @@
     color: #fff;
 }
 
+.planning-container__section--3 li.li-check,
 .planning-container__section--3 li.li-minus {
     flex-direction: column;
     overflow: hidden;
     align-items: flex-start;
 }
 
+.planning-container__section--3 li.li-check .title,
 .planning-container__section--3 li.li-minus .title {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
+.planning-container__section--3 li.li-check .title input, 
 .planning-container__section--3 li.li-minus .title input {
     background: #FFF;
 }
 
+.planning-container__section--3 li.li-check .title input:checked, 
 .planning-container__section--3 li.li-minus .title input:checked {
     background: #4c0083;
 }
 
+/* .planning-container__section--3 li.li-check .title input:checked::after,  */
 .planning-container__section--3 li.li-minus .title input:checked::after {
     content: "\2212";
 }
 
+/* .planning-container__section--3 li.li-check .title input::after,  */
 .planning-container__section--3 li.li-minus .title input::after {
     content: "\2212";
     font-size: 17px;
@@ -199,7 +214,8 @@
     color: #fff;
 }
 
-.planning-container__section--3 li.li-minus.li-minus > ul {
+.planning-container__section--3 li.li-minus.li-minus > ul,
+.planning-container__section--3 li.li-check > ul {
     padding-right: 30px;
 } 
 /* 

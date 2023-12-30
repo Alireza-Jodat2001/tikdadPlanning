@@ -117,7 +117,6 @@
 
 .planning-container__section--3 li.li-check::before,
 .planning-container__section--3 li .title::before,
-.planning-container__section--3 li.plus-items::before,
 .planning-container__section--3 li.minus-items::before {
     content: "\203A";
     font-size: 30px;
@@ -182,15 +181,15 @@
 }
 
 .planning-container__section--3 li.li-minus .title input {
-    background: var(--color-purple-primary);
+    background: #FFF;
 }
 
 .planning-container__section--3 li.li-minus .title input:checked {
-    background: var(--color-purple-primary);
+    background: #4c0083;
 }
 
 .planning-container__section--3 li.li-minus .title input:checked::after {
-    content: "\002B";
+    content: "\2212";
 }
 
 .planning-container__section--3 li.li-minus .title input::after {
@@ -201,9 +200,9 @@
 }
 
 .planning-container__section--3 li.li-minus.li-minus > ul {
-    display: none;
-}
-
+    padding-right: 30px;
+} 
+/* 
 .planning-container__section--3 li.li-plus {
     flex-direction: column;
     overflow: hidden;
@@ -235,10 +234,9 @@
     color: #fff;
 }
 
-.planning-container__section--3 li.li-plus .plus-items,
 .planning-container__section--3 li.li-plus .minus-items {
     margin-right: 30px;
-}
+} */
 
 .planning-container__section--3 li .checkMark {
     width: 17px;
